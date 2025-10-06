@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chila’s Cover Studio 💗</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <h1>💗 Chila’s Cover Studio 🎶</h1>
+      <p>soft tunes & sweet vibes</p>
+  </header>
+
+  <main>
+    <div class="player-card">
+      <img id="coverArt" src="img/cover1.jpg" alt="chielle">
+      <h2 id="songTitle">MOVING ON - NMIXX (Cover by Chila)</h2>
+
+      <audio id="audio" controls></audio>
+
+      <div class="controls">
+        <button onclick="prevSong()">⏮</button>
+        <button onclick="togglePlay()">⏯</button>
+        <button onclick="nextSong()">⏭</button>
+      </div>
+    </div>
+
+    <div class="playlist">
+      <h3>🌷 Playlist</h3>
+      <ul id="songList"></ul>
+    </div>
+  </main>
+  
+  <div class="icon">
+      <a href="https://youtube.com/@hii.chielle?si=7tIgvgS7wwqRJWvV"> 
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #f5d1f0;"></i>
+      </a>
+ <a href="https://www.bandlab.com/cilokrasapink">
+   <i class="fa-solid fa-music fa-2xl" style="color: #fbd5f1;"></i>
+  </a>
+  <a href="https://www.instagram.com/phmchilaa?igsh=cXFqdWQ1ZThoa2U4">
+    <i class="fa-brands fa-instagram fa-2xl" style="color: #f4c2f5;"></i>
+  </a>
+</div>
+  <footer>
+    <p>© 2025 Chielle | made with love 💕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

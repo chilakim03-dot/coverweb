@@ -1,0 +1,103 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff7fb;
+  color: #5a4a57;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+  background: #d42092;
+background: linear-gradient(0deg, rgb(239, 184, 219) 0%, rgba(252, 207, 252, 1) 100%);
+    padding: 3rem;
+}
+      
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.player-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 320px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.player-card img {
+  width: 100%;
+  border-radius: 100%; /* ini yang bikin foto melengkung */
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* opsional biar ada bayangan lembut */
+}
+
+.controls button {
+  margin: 5px;
+  background-color: #ffc7de;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background-color: #ff9cc0;
+}
+
+.playlist {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 300px;
+  padding: 15px;
+}
+
+.playlist h3 {
+  color: #ff78a0;
+}
+
+.playlist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playlist li {
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.playlist li:hover {
+  background-color: #ffe4ef;
+}
+
+.playlist li.active {
+  background-color: #ffcce1;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 13px;
+  color: #9c8a95;
+}
+
+/* cover art muter pas lagu play */
+.rotate {
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
